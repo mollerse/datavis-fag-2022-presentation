@@ -1,0 +1,41 @@
+{
+  "name": "datavis-fag-2022-presentation",
+  "version": "1.0.0",
+  "description": "Presentation about pseudorandom number generators and creative coding",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo presentation.js -s index.js --live -- -t [ babelify ] -t brfs",
+    "build": "browserify presentation.js -o index.js -t [ babelify ] -t brfs"
+  },
+  "keywords": [
+    "presentation"
+  ],
+  "author": "Stian Møllersen <stian.moellersen@gmail.com>",
+  "license": "CC-BY-NC-SA-4.0",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "babelify": "^10.0.0",
+    "brfs": "^2.0.1",
+    "browserify": "^16.2.2",
+    "budo": "^11.3.2"
+  },
+  "dependencies": {
+    "dat.gui": "^0.7.2",
+    "prismjs": "^1.16.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "simplex-noise": "^2.4.0",
+    "spectacle": "^4.2.3",
+    "spectacle-code-slide": "^0.5.2",
+    "web-midi": "^2.1.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env",
+      "@babel/react"
+    ]
+  }
+}
